@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="index.js" type="module"></script>
+  </head>
+  <body>
+   
+      <div class="Contenedor">
+
+      <div class="titulo">
+        <h2>CIFRADO CESAR</h2>
+      </div>
+
+      <form>
+        <div class="inputtext">
+          <label for="mensaje">Escribe el texto en mayuscula:</label>
+          <input type="text" id="mensaje" class="text" placeholder="Ejm: HOLAMUNDO"/>
+        </div>
+        <div  class="inputtext">
+          <label for="desplazamiento">Escribe tu Nro de Clave:</label>
+          <!-- "Ejm: escoge cualquier numero" -->
+          <input type="number" id="desplazamiento" class="number" value="1" min="1" placeholder="" />
+        </div>
+                 
+
+        <div>
+          <!-- <button type="button" id="miboton" onclick="micifrado()">Cifrado</button> -->
+          <button type="button" class="button" id="btncifrado">Cifrado</button>
+          <button id="btnlimpiar" class="button" type="button">Borrar</button>
+          <button type="button" class="button" id="btndescifrado">Descifrado</button>
+         
+        </div>
+
+        <div >
+          <br/>
+          <label for="resultado">Resultado</label>
+          <br/>
+          <textarea class="resultado" id="resultado"  rows="3" cols="35"  ></textarea>
+        </div>
+    
+      </form>
+    </div>
+  
+    
+    <div id="root">
+   
+    </div>
+
+  <!-- <footer>
+  <h2>&copy;Copyright Reserved</h2>
+  </footer> -->
+  </body>
+</html>
