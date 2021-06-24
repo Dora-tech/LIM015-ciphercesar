@@ -18,7 +18,13 @@ function micifrado(){
     let pos = +document.getElementById("desplazamiento").value;
 /*     console.log(cipher.cifrar(nombre,pos)); */
 //
-    document.getElementById("resultado").value=cipher.encode(pos,nombre);
+    if(nombre=="")
+        alert("Debe escribir un texto a cifrar");
+    else 
+        if(pos<=0)
+            alert("El numero clave debe ser un entero positivo")
+        else 
+            document.getElementById("resultado").value=cipher.encode(pos,nombre);
     //warning
     // console.log(typeof cipher); 
     // console.log(typeof cipher.encode);
@@ -30,7 +36,14 @@ function midescifrado(){
     let nombre = document.getElementById("mensaje").value;
     let pos = +document.getElementById("desplazamiento").value;
 /*     console.log(cipher.cifrar(nombre,pos)); */
-    document.getElementById("resultado").value=cipher.decode(pos,nombre);
+
+     if(nombre=="")
+        alert("Debe escribir un texto a descifrar");
+    else 
+        if(pos<=0)
+            alert("El numero clave debe ser un entero positivo")
+        else 
+             document.getElementById("resultado").value=cipher.decode(pos,nombre);
 }
 // Al darle click al botón limpiar, sucede esto: 
 function limpiar(){

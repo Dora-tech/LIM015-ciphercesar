@@ -6,7 +6,9 @@ const cipher = {
     let posexc=0;
     let cifra={};
     let mensajecifrado="";
-
+    let nombrecopia=nombre;
+    nombre=nombre.toUpperCase();
+//busqueda en nuestro diccionario de letras y cifrado
     for(let j=0;j<nombre.length;j++){
       for(let i=0; i<26; i++){
     
@@ -25,10 +27,23 @@ const cipher = {
         }
       }   
      }
+     //fin de la busqueda y cifrado
+     //guardando el cifrado
+
     for(let j=0;j<nombre.length;j++){
      //console.log(cifra[j]);
-       mensajecifrado=mensajecifrado+cifra[j]
+     //si no encuentra la letra no codificamos y lo guardamos igual como era la letra original
+      if( cifra[j]==undefined)
+        mensajecifrado=mensajecifrado+nombrecopia[j];
+      else 
+      {
+        if(esMayuscula(nombrecopia[j]))
+            mensajecifrado=mensajecifrado+cifra[j];
+        else
+            mensajecifrado=mensajecifrado+cifra[j].toLowerCase();
+      }
     }
+
     if(pos==null)
       throw new TypeError('no puede ser nulo');
     if(pos==0 && nombre==0)
@@ -43,6 +58,8 @@ const cipher = {
     let posexc=0;
     let cifra={};
     let mensajedescifrado="";
+    let nombrecopia=nombre;
+    nombre=nombre.toUpperCase();
 
     for(let j=0;j<nombre.length;j++){
       for(let i=0; i<26; i++){
@@ -57,9 +74,18 @@ const cipher = {
         }
       }   
      }
-    for(let j=0;j<nombre.length;j++){
+    for(let j=0;j<nombre.length;j++)
+    {
      //   console.log(cifra[j]);
-        mensajedescifrado=mensajedescifrado+cifra[j]
+     if(cifra[j]==undefined)
+        mensajedescifrado=mensajedescifrado+nombrecopia[j]
+      else
+      {
+         if(esMayuscula(nombrecopia[j]))
+              mensajedescifrado=mensajedescifrado+cifra[j];
+          else
+              mensajedescifrado=mensajedescifrado+cifra[j].toLowerCase();
+      }
     }
     if(pos==null)
      throw new TypeError('no puede ser nulo');
@@ -69,5 +95,10 @@ const cipher = {
     return mensajedescifrado;
   }
 };
+
+function esMayuscula(letra)
+{
+  return letra===letra.toUpperCase();
+}
 
 export default cipher;
