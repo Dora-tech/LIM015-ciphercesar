@@ -7,7 +7,9 @@ const cipher = {
     let cifra={};
     let mensajecifrado="";
     let nombrecopia=nombre;
+    //console.log(nombrecopia);
     nombre=nombre.toUpperCase();
+   // console.log(nombre);
 //busqueda en nuestro diccionario de letras y cifrado
     for(let j=0;j<nombre.length;j++){
       for(let i=0; i<26; i++){
@@ -37,10 +39,17 @@ const cipher = {
         mensajecifrado=mensajecifrado+nombrecopia[j];
       else 
       {
-        if(esMayuscula(nombrecopia[j]))
-            mensajecifrado=mensajecifrado+cifra[j];
-        else
-            mensajecifrado=mensajecifrado+cifra[j].toLowerCase();
+        if(esMayuscula(nombrecopia[j])){
+         // console.log(esMayuscula(nombrecopia[j]));
+          mensajecifrado=mensajecifrado+cifra[j];
+          //console.log(mensajecifrado);
+        } 
+        else{
+         // console.log(esMayuscula(nombrecopia[j]));
+          mensajecifrado=mensajecifrado+cifra[j].toLowerCase();
+         // console.log(mensajecifrado);
+        }
+           
       }
     }
 

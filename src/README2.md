@@ -47,9 +47,12 @@ En cuanto a UX (definición del producto):
 
     ![img](../src/img/npm_test.png)
 
-    * así que quede el diseño final
+    * así que quede el diseño
 
     ![img](../src/img/web.png)
+
+    * y tambien modifique el nuevo diseño final
+    ![img](../src/img/nuevo_diseño.png)
 
 #### Instrucciones
 ### Para codificar(encode):
