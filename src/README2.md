@@ -52,7 +52,8 @@ En cuanto a UX (definición del producto):
     ![img](../src/img/web.png)
 
     * y tambien modifique el nuevo diseño final
-    ![img](../src/img/nuevo_diseño.png)
+
+    ![img](img/nuevo_diseño.png)
 
 #### Instrucciones
 ### Para codificar(encode):

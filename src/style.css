@@ -1,3 +1,4 @@
+/* selector universal */
 *{
   box-sizing: border-box;
   
@@ -6,7 +7,7 @@
 body{
   background-color: rgb(178, 236, 224);
 }
-
+/* es un selector de clase */
 .logo {
        width: 350px;
        height: 200px; 
