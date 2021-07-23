@@ -1,0 +1,101 @@
+/* selector universal */
+*{
+  box-sizing: border-box;
+  
+}   
+  
+body{
+  background-color: rgb(178, 236, 224);
+}
+/* es un selector de clase */
+.logo {
+       width: 350px;
+       height: 200px; 
+       position: absolute;
+       top: -150px;
+       left: calc(30% - 70px);
+     }
+      /* Declaramos una regla de estilo para el bodyelemento así: */
+.flex-container {
+       display: flex;
+       justify-content: center;
+       box-sizing: border-box;
+      
+     }
+     
+.flex-container > div {
+    
+        text-align: center;
+        line-height: 50px;
+        width: 530px;
+        margin: 150px;
+        padding: 0px;
+        background-image: url(img/encryption.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: cover; 
+       border-radius: 50px;    
+     }
+
+label {
+font-size: 25px;
+font-weight: bold;
+color: white;
+-webkit-text-stroke: 1px rgb(207, 56, 195);
+
+}
+.button {
+  /* border: sirve lineada */
+border: none;
+border-radius: 5px;
+padding: 10px 25px 10px 20px;
+text-decoration: none;
+color: #fff;
+background-color: rgb(93, 31, 99);
+display: inline-flex;
+width: 100px;
+font-size: 12px;
+font-weight: bold;
+text-align: center;
+transition: 0.2s linear all;
+
+}
+.button:hover {
+background-color: palevioletred;
+transform: scale(1);
+cursor: pointer;
+}
+textarea{
+resize: none;
+border: none;
+font-size: 23px;
+font-weight: bold;
+padding: 15px 5px 5px 20px;
+background-color:rgb(234, 242, 250);
+border-radius: 10px;
+margin:10px 10px;
+}
+
+
+.inputtext input[type="text"] {
+height: 35px;
+color: rgb(3, 3, 3);
+font-size: 20px;
+width: 77%;
+padding: 5px 5px 5px 15px; 
+font-weight: bold;
+border-radius: 10px;
+margin:10px 58px;
+display: block;
+}
+.inputtext input[type="number"]{
+height: 30px;
+color: rgb(3, 3, 3);
+font-size: 20px;
+width: 15%;
+font-weight: bold;
+border-radius: 10px;
+padding: 5px 5px 5px 20px; 
+margin:10px 10px;
+}
